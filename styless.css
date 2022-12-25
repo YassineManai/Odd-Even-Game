@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+
+.wrapper {
+  width: 600px;
+  background: rgba(83, 104, 225, 0.735);
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  left: 700px;
+  top: 100px;
+  opacity: 0.8;
+
+}
+
+.wrapper header {
+  display: flex;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  
+}
+.g{
+  
+  position: relative;
+  left: 205px;
+}
+header i {
+  font-size: 0em;
+  cursor: pointer;
+  margin-right: 8px;
+ 
+}
+
+.wrapper.active header i {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.wrapper .input-part {
+  margin: 20px 25px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper.active .input-part {
+  display: none;
+}
+
+.input-part .info-txt {
+  display: none;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.input-part .info-txt.error {
+  color: #721c24;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #f5c6cb;
+}
+
+.input-part .info-txt.pending {
+  color: #0c5460;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-part :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+  font-family: 'Poppins', sans-serif;
+
+
+  cursor: pointer;
+
+
+
+
+}
+
+.input-part input {
+  text-align: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+.input-part input:is(:focus, :valid) {
+  border: 2px solid #43AFFC;
+}
+
+.input-part input::placeholder {
+  color: rgba(100, 80, 249, 0.2);
+
+}
+
+.input-part .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+
+
+}
+
+.separator::before {
+  content: "ET";
+  color: #fff;
+  font-size: 19px;
+  padding: 0 15px;
+
+}
+
+.input-part button {
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.c :hover {
+  background: #1d9ffc
+  
+}
+
+
+
+.wrapper .weather-part {
+  display: none;
+  margin: 30px 0 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.body {
+  background: url('background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.msg {
+  color: #6c9df1;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  font-size: 2rem;
+
+}
+
+.msgwin {
+  color: #4281ed;
+  
+  position: absolute;
+  top: 20%;
+  right: 12%;
+  font-size: 2rem;
+}
+
+h1 {
+  color: #5d95f6;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.pic {
+  left: 10px;
+  position: relative;
+}
+
+.msgmil {
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.msgerror {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  font-size: 2rem;
+  text-align: center;
+}
+td{
+
+  text-align: center;
+}
